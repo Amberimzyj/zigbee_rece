@@ -1,0 +1,30 @@
+SET PATH=C:\Keil_v5\ARM\ARMCC\Bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\MATLAB\R2017b\runtime\win64;C:\Program Files\MATLAB\R2017b\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\LLVM\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\Amberimzyj\AppData\Local\Programs\Python\Python36;C:\Users\Amberimzyj\AppData\Local\Programs\Python\Python36\Scripts;C:\Program Files\cmder;C:\Program Files\plugin;C:\Program Files\phantomjs;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\Atmel\sam-ba_2.14\drv\;C:\Program Files (x86)\Atmel\sam-ba_2.14;C:\Users\Amberimzyj\AppData\Local\Microsoft\WindowsApps;C:\Program Files\LLVM\bin;C:\Users\Amberimzyj\AppData\Local\GitHubDesktop\bin
+SET CPU_TYPE=STM32F103C8
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=zigbee
+SET CPU_CLOCK=0x00B71B00
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\core_cm3.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via "..\obj\startup_stm32f10x_md._ia"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\system_stm32f10x.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_it.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\led.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\myiic.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\am2320.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\gy-30.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\myiic1.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\esp8266.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\dl_ln33_send.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\dl_ln33_rece.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\misc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_gpio.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_rcc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_usart.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_i2c.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_fsmc.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_tim.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\delay.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\sys.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\usart.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\main.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via "..\OBJ\usart.lnp"
+"C:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" "..\OBJ\usart.axf" --i32combined --output "..\OBJ\usart.hex"
